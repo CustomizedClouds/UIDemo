@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Todos</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Bootstrap -->
+<link href="bs3/css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style-responsive.css" rel="stylesheet">
+<link href="css/atom-style.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="plugins/kalendar/kalendar.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+<link href="css/animate.css" rel="stylesheet">
+<link href="plugins/scroll/nanoscroller.css" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--layout-container start-->
+<div id="layout-container"> 
+  <!--main start-->
+  <div id="main">    
+    <div class="margin-container"> 
+      <div class="scrollable wrapper"> 
+        <div class="row"> 
+          <div class="col-md-12"> 
+            <div class="box-info">
+              <h4>To Do List </h4>
+              <ul id="sortable-todo" class="to-do-list">
+                <li class="clearfix"> <span class="drag-marker"> <i></i> </span>
+                  <div class="todo-check pull-left">
+                    <input type="checkbox" id="todo-check" value="None">
+                    <label for="todo-check"></label>
+                  </div>
+                  <p class="todo-title"> Lorem ipsum dolor sit amet, consectetuer adipiscing </p>
+                  <div class="todo-actionlist pull-right clearfix"> <a class="todo-done" href="#"><i class="fa fa-check"></i></a> <a class="todo-edit" href="#"><i class="fa fa-pencil"></i></a> <a class="todo-remove"><i class="fa fa-times icon-muted"></i></a> </div>
+                </li>
+                <li class="clearfix todo-list-active"> <span class="drag-marker"> <i></i> </span>
+                  <div class="todo-check pull-left">
+                    <input type="checkbox" id="todo-check1" value="None">
+                    <label for="todo-check1"></label>
+                  </div>
+                  <p class="todo-title"> Lorem ipsum dolor sit amet, consectetuer adipiscing </p>
+                  <div class="todo-actionlist pull-right clearfix"> <a class="todo-done" href="#"><i class="fa fa-check"></i></a> <a class="todo-edit" href="#"><i class="fa fa-pencil"></i></a> <a class="todo-remove"><i class="fa fa-times icon-muted"></i></a> </div>
+                </li>
+                <li class="clearfix"> <span class="drag-marker"> <i></i> </span>
+                  <div class="todo-check pull-left">
+                    <input type="checkbox" id="todo-check2" value="None">
+                    <label for="todo-check2"></label>
+                  </div>
+                  <p class="todo-title"> Lorem ipsum dolor sit amet, consectetuer adipiscing </p>
+                  <div class="todo-actionlist pull-right clearfix"> <a class="todo-done" href="#"><i class="fa fa-check"></i></a> <a class="todo-edit" href="#"><i class="fa fa-pencil"></i></a> <a class="todo-remove"><i class="fa fa-times icon-muted"></i></a> </div>
+                </li>
+                <li class="clearfix"> <span class="drag-marker"> <i></i> </span>
+                  <div class="todo-check pull-left">
+                    <input type="checkbox" id="todo-check3" value="None">
+                    <label for="todo-check3"></label>
+                  </div>
+                  <p class="todo-title"> Lorem ipsum dolor sit amet, consectetuer adipiscing </p>
+                  <div class="todo-actionlist pull-right clearfix"> <a class="todo-done" href="#"><i class="fa fa-check"></i></a> <a class="todo-edit" href="#"><i class="fa fa-pencil"></i></a> <a class="todo-remove"><i class="fa fa-times icon-muted"></i></a> </div>
+                </li>
+                <li class="clearfix"> <span class="drag-marker"> <i></i> </span>
+                  <div class="todo-check pull-left">
+                    <input type="checkbox" id="todo-check4" value="None">
+                    <label for="todo-check4"></label>
+                  </div>
+                  <p class="todo-title"> Lorem ipsum dolor sit amet, consectetuer adipiscing </p>
+                  <div class="todo-actionlist pull-right clearfix"> <a class="todo-done" href="#"><i class="fa fa-check"></i></a> <a class="todo-edit" href="#"><i class="fa fa-pencil"></i></a> <a class="todo-remove"><i class="fa fa-times icon-muted"></i></a> </div>
+                </li>
+                <li class="clearfix"> <span class="drag-marker"> <i></i> </span>
+                  <div class="todo-check pull-left">
+                    <input type="checkbox" id="todo-check5" value="None">
+                    <label for="todo-check5"></label>
+                  </div>
+                  <p class="todo-title"> Lorem ipsum dolor sit amet, consectetuer adipiscing </p>
+                  <div class="todo-actionlist pull-right clearfix"> <a class="todo-done" href="#"><i class="fa fa-check"></i></a> <a class="todo-edit" href="#"><i class="fa fa-pencil"></i></a> <a class="todo-remove"><i class="fa fa-times icon-muted"></i></a> </div>
+                </li>
+              </ul>
+              <!--sortable-todo end--> 
+              <!--todo-action-bar start-->
+              <div class="todo-action-bar"> 
+                <!--row start-->
+                <div class="row">
+                  <div class="col-xs-3 btn-todo-select">
+                    <button class="btn btn-default" type="submit"><i class="fa fa-check"></i> Select All</button>
+                  </div>
+                  <div class="col-xs-6 todo-search-wrap">
+                    <input type="text" placeholder=" Search" class="form-control search todo-search pull-right">
+                  </div>
+                  <div class="col-xs-3 btn-add-task">
+                    <button class="btn btn-default btn-danger" type="submit"><i class="fa fa-plus"></i> Add Task</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>
+<!--layout-container end--> 
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-1.10.2.js"></script> 
+<script src="js/jquery-ui-1.9.1.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="bs3/js/bootstrap.min.js"></script> 
+<script src="js/to-do-admin.js"></script> 
+
+</body>
+</html>

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <script src="aDOM/jquery.js"></script> 
+    <script src="aDOM/shortcuts.js"></script>
+<title>Inbox</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Bootstrap -->
+<link href="bs3/css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style-responsive.css" rel="stylesheet">
+<link href="css/atom-style.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+<link href="css/animate.css" rel="stylesheet">
+<link href="plugins/scroll/nanoscroller.css" rel="stylesheet">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div id="layout-container">
+  
+  <div id="main">
+    
+    <div class="margin-container">
+      <div class="scrollable wrapper">
+        
+        
+      <div class="row">
+            
+            <div class="col-sm-12">
+                <section class="panel">
+                    <header class="panel-heading wht-bg">
+                       <h4 class="gen-case">Inbox (67)
+                        <form class="pull-right mail-src-position" action="#">
+                            <div class="input-append">
+                                <input type="text" placeholder="Search Mail" class="form-control ">
+                            </div>
+                        </form>
+                       </h4>
+                    </header>
+                    <div class="panel-body minimal">
+                        <div class="mail-option">
+                            <div class="chk-all">
+                                <div class="pull-left mail-checkbox ">
+                                    <div class="icheckbox_minimal" style="position: relative;"><input type="checkbox" class="" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: none repeat scroll 0% 0% rgb(255, 255, 255); border: 0px none; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: none repeat scroll 0% 0% rgb(255, 255, 255); border: 0px none; opacity: 0;"></ins></div>
+                                </div>
+
+                                <div class="btn-group">
+                                    <a class="btn mini all" href="#" data-toggle="dropdown">
+                                        All
+                                        <i class="fa fa-angle-down "></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#"> None</a></li>
+                                        <li><a href="#"> Read</a></li>
+                                        <li><a href="#"> Unread</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="btn-group">
+                                <a class="btn mini tooltips" href="#" data-toggle="dropdown" data-placement="top" data-original-title="Refresh">
+                                    <i class=" fa fa-refresh"></i>
+                                </a>
+                            </div>
+                            <div class="btn-group hidden-phone">
+                                <a class="btn mini blue" href="#" data-toggle="dropdown">
+                                    More
+                                    <i class="fa fa-angle-down "></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><i class="fa fa-pencil"></i> Mark as Read</a></li>
+                                    <li><a href="#"><i class="fa fa-ban"></i> Spam</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#"><i class="fa fa-trash-o"></i> Delete</a></li>
+                                </ul>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn mini blue" href="#" data-toggle="dropdown">
+                                    Move to
+                                    <i class="fa fa-angle-down "></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><i class="fa fa-pencil"></i> Mark as Read</a></li>
+                                    <li><a href="#"><i class="fa fa-ban"></i> Spam</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#"><i class="fa fa-trash-o"></i> Delete</a></li>
+                                </ul>
+                            </div>
+
+                            <ul class="unstyled inbox-pagination">
+                                <li><span>1-50 of 124</span></li>
+                                <li>
+                                    <a href="#" class="np-btn"><i class="fa fa-angle-left  pagination-left"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="np-btn"><i class="fa fa-angle-right pagination-right"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="table-inbox-wrap ">
+                            <table class="table table-inbox table-hover">
+                            <tbody>
+                              <tr class="unread">
+                                  <td class="inbox-small-cells">
+                                      <input type="checkbox" class="mail-checkbox">
+                                  </td>
+                                  <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
+                                  <td class="view-message  dont-show">Hamish Rutherford</td>
+                                  <td class="view-message ">Lorem ipsum dolor imit set.</td>
+                                  <td class="view-message  inbox-small-cells"><i class="fa fa-paperclip"></i></td>
+                                  <td class="view-message  text-right">9:27 AM</td>
+                              </tr>
+                              <tr class="unread">
+                                  <td class="inbox-small-cells">
+                                      <input type="checkbox" class="mail-checkbox">
+                                  </td>
+                                  <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
+                                  <td class="view-message dont-show">John Doe</td>
+                                  <td class="view-message">Hi Bro, How are you?</td>
+                                  <td class="view-message inbox-small-cells"></td>
+                                  <td class="view-message text-right">March 15</td>
+                              </tr>
+                              <tr class="">
+                                  <td class="inbox-small-cells">
+                                      <input type="checkbox" class="mail-checkbox">
+                                  </td>
+                                  <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
+                                  <td class="view-message dont-show">Tom Latham</td>
+                                  <td class="view-message">Lorem ipsum dolor sit amet</td>
+                                  <td class="view-message inbox-small-cells"></td>
+                                  <td class="view-message text-right">June 15</td>
+                              </tr>
+                              <tr class="">
+                                  <td class="inbox-small-cells">
+                                      <input type="checkbox" class="mail-checkbox">
+                                  </td>
+                                  <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
+                                  <td class="view-message dont-show">Facebook</td>
+                                  <td class="view-message">Dolor sit amet, consectetuer adipiscing</td>
+                                  <td class="view-message inbox-small-cells"></td>
+                                  <td class="view-message text-right">April 01</td>
+                              </tr>
+                              <tr class="">
+                                  <td class="inbox-small-cells">
+                                      <input type="checkbox" class="mail-checkbox">
+                                  </td>
+                                  <td class="inbox-small-cells"><i class="fa fa-star inbox-started"></i></td>
+                                  <td class="view-message dont-show">Corey Anderson <span class="label label-danger pull-right">urgent</span></td>
+                                  <td class="view-message">Lorem ipsum dolor sit amet</td>
+                                  <td class="view-message inbox-small-cells"></td>
+                                  <td class="view-message text-right">May 23</td>
+                              </tr>
+                              <tr class="">
+                                  <td class="inbox-small-cells">
+                                      <input type="checkbox" class="mail-checkbox">
+                                  </td>
+                                  <td class="inbox-small-cells"><i class="fa fa-star inbox-started"></i></td>
+                                  <td class="view-message dont-show">Facebook</td>
+                                  <td class="view-message">Dolor sit amet, consectetuer adipiscing</td>
+                                  <td class="view-message inbox-small-cells"><i class="fa fa-paperclip"></i></td>
+                                  <td class="view-message text-right">March 14</td>
+                              </tr>
+                              <tr class="">
+                                  <td class="inbox-small-cells">
+                                      <input type="checkbox" class="mail-checkbox">
+                                  </td>
+                                  <td class="inbox-small-cells"><i class="fa fa-star inbox-started"></i></td>
+                                  <td class="view-message dont-show">Rafiq</td>
+                                  <td class="view-message">Lorem ipsum dolor sit amet</td>
+                                  <td class="view-message inbox-small-cells"><i class="fa fa-paperclip"></i></td>
+                                  <td class="view-message text-right">January 19</td>
+                              </tr>
+                              <tr class="">
+                                  <td class="inbox-small-cells">
+                                      <input type="checkbox" class="mail-checkbox">
+                                  </td>
+                                  <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
+                                  <td class="view-message dont-show">Facebook <span class="label label-success pull-right">megazine</span></td>
+                                  <td class="view-message view-message">Dolor sit amet, consectetuer adipiscing</td>
+                                  <td class="view-message inbox-small-cells"></td>
+                                  <td class="view-message text-right">March 04</td>
+                              </tr>
+                              <tr class="">
+                                  <td class="inbox-small-cells">
+                                      <input type="checkbox" class="mail-checkbox">
+                                  </td>
+                                  <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
+                                  <td class="view-message dont-show">Hamish Rutherford</td>
+                                  <td class="view-message view-message">Lorem ipsum dolor sit amet</td>
+                                  <td class="view-message inbox-small-cells"></td>
+                                  <td class="view-message text-right">June 13</td>
+                              </tr>
+                              <tr class="">
+                                  <td class="inbox-small-cells">
+                                      <input type="checkbox" class="mail-checkbox">
+                                  </td>
+                                  <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
+                                  <td class="view-message dont-show">Facebook <span class="label label-info pull-right">family</span></td>
+                                  <td class="view-message view-message">Dolor sit amet, consectetuer adipiscing</td>
+                                  <td class="view-message inbox-small-cells"></td>
+                                  <td class="view-message text-right">March 24</td>
+                              </tr>
+                              <tr class="">
+                                  <td class="inbox-small-cells">
+                                      <input type="checkbox" class="mail-checkbox">
+                                  </td>
+                                  <td class="inbox-small-cells"><i class="fa fa-star inbox-started"></i></td>
+                                  <td class="view-message dont-show">Hamish Rutherford</td>
+                                  <td class="view-message">Lorem ipsum dolor sit amet</td>
+                                  <td class="view-message inbox-small-cells"></td>
+                                  <td class="view-message text-right">March 09</td>
+                              </tr>
+                              <tr class="">
+                                  <td class="inbox-small-cells">
+                                      <input type="checkbox" class="mail-checkbox">
+                                  </td>
+                                  <td class="inbox-small-cells"><i class="fa fa-star inbox-started"></i></td>
+                                  <td class="dont-show">Facebook</td>
+                                  <td class="view-message">Dolor sit amet, consectetuer adipiscing</td>
+                                  <td class="view-message inbox-small-cells"><i class="fa fa-paperclip"></i></td>
+                                  <td class="view-message text-right">May 14</td>
+                              </tr>
+                              <tr class="">
+                                  <td class="inbox-small-cells">
+                                      <input type="checkbox" class="mail-checkbox">
+                                  </td>
+                                  <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
+                                  <td class="view-message dont-show">Sumon</td>
+                                  <td class="view-message">Lorem ipsum dolor sit amet</td>
+                                  <td class="view-message inbox-small-cells"><i class="fa fa-paperclip"></i></td>
+                                  <td class="view-message text-right">February 25</td>
+                              </tr>
+                              <tr class="">
+                                  <td class="inbox-small-cells">
+                                      <input type="checkbox" class="mail-checkbox">
+                                  </td>
+                                  <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
+                                  <td class="dont-show">Facebook</td>
+                                  <td class="view-message view-message">Dolor sit amet, consectetuer adipiscing</td>
+                                  <td class="view-message inbox-small-cells"></td>
+                                  <td class="view-message text-right">March 14</td>
+                              </tr>
+                              <tr class="">
+                                  <td class="inbox-small-cells">
+                                      <input type="checkbox" class="mail-checkbox">
+                                  </td>
+                                  <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
+                                  <td class="view-message dont-show">Dulal</td>
+                                  <td class="view-message">Lorem ipsum dolor sit amet</td>
+                                  <td class="view-message inbox-small-cells"></td>
+                                  <td class="view-message text-right">April 07</td>
+                              </tr>
+                              <tr class="">
+                                  <td class="inbox-small-cells">
+                                      <input type="checkbox" class="mail-checkbox">
+                                  </td>
+                                  <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
+                                  <td class="view-message dont-show">Twitter</td>
+                                  <td class="view-message">Dolor sit amet, consectetuer adipiscing</td>
+                                  <td class="view-message inbox-small-cells"></td>
+                                  <td class="view-message text-right">July 14</td>
+                              </tr>
+                              <tr class="">
+                                  <td class="inbox-small-cells">
+                                      <input type="checkbox" class="mail-checkbox">
+                                  </td>
+                                  <td class="inbox-small-cells"><i class="fa fa-star inbox-started"></i></td>
+                                  <td class="view-message dont-show">Sumon</td>
+                                  <td class="view-message">Lorem ipsum dolor sit amet</td>
+                                  <td class="view-message inbox-small-cells"></td>
+                                  <td class="view-message text-right">August 10</td>
+                              </tr>
+                              <tr class="">
+                                  <td class="inbox-small-cells">
+                                      <input type="checkbox" class="mail-checkbox">
+                                  </td>
+                                  <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
+                                  <td class="view-message dont-show">Facebook</td>
+                                  <td class="view-message view-message">Dolor sit amet, consectetuer adipiscing</td>
+                                  <td class="view-message inbox-small-cells"><i class="fa fa-paperclip"></i></td>
+                                  <td class="view-message text-right">April 14</td>
+                              </tr>
+                              <tr class="">
+                                  <td class="inbox-small-cells">
+                                      <input type="checkbox" class="mail-checkbox">
+                                  </td>
+                                  <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
+                                  <td class="view-message dont-show">Mosaddek</td>
+                                  <td class="view-message">Lorem ipsum dolor sit amet</td>
+                                  <td class="view-message inbox-small-cells"><i class="fa fa-paperclip"></i></td>
+                                  <td class="view-message text-right">June 16</td>
+                              </tr>
+                              <tr class="">
+                                  <td class="inbox-small-cells">
+                                      <input type="checkbox" class="mail-checkbox">
+                                  </td>
+                                  <td class="inbox-small-cells"><i class="fa fa-star inbox-started"></i></td>
+                                  <td class="view-message dont-show">Sumon</td>
+                                  <td class="view-message">Lorem ipsum dolor sit amet</td>
+                                  <td class="view-message inbox-small-cells"></td>
+                                  <td class="view-message text-right">August 10</td>
+                              </tr>
+                              <tr class="">
+                                  <td class="inbox-small-cells">
+                                      <input type="checkbox" class="mail-checkbox">
+                                  </td>
+                                  <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
+                                  <td class="view-message dont-show">Facebook</td>
+                                  <td class="view-message view-message">Dolor sit amet, consectetuer adipiscing</td>
+                                  <td class="view-message inbox-small-cells"><i class="fa fa-paperclip"></i></td>
+                                  <td class="view-message text-right">April 14</td>
+                              </tr>
+                          </tbody>
+                          </table>	
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>  
+         
+      </div>
+    </div>
+  </div>
+  <!-- sidebar chats -->
+<nav class="atm-spmenu atm-spmenu-vertical atm-spmenu-right side-chat">
+	<div class="header">
+    <input type="text" class="form-control chat-search" placeholder=" Search">
+  </div>
+  <div href="#" class="sub-header">
+    <div class="icon"><i class="fa fa-user"></i></div> <p>Online (4)</p>
+  </div>
+  <div class="content">
+    <p class="title">Family</p>
+    <ul class="nav nav-pills nav-stacked contacts">
+      <li class="online"><a href="#"><i class="fa fa-circle-o"></i> Steven Smith</a></li>
+      <li class="online"><a href="#"><i class="fa fa-circle-o"></i> John Doe</a></li>
+      <li class="online"><a href="#"><i class="fa fa-circle-o"></i> Michael Smith</a></li>
+      <li class="busy"><a href="#"><i class="fa fa-circle-o"></i> Chris Rogers</a></li>
+    </ul>
+    
+    <p class="title">Friends</p>
+    <ul class="nav nav-pills nav-stacked contacts">
+      <li class="online"><a href="#"><i class="fa fa-circle-o"></i> Vernon Philander</a></li>
+      <li class="outside"><a href="#"><i class="fa fa-circle-o"></i> Kyle Abbott</a></li>
+      <li><a href="#"><i class="fa fa-circle-o"></i> Dean Elgar</a></li>
+    </ul>   
+    
+    <p class="title">Work</p>
+    <ul class="nav nav-pills nav-stacked contacts">
+      <li><a href="#"><i class="fa fa-circle-o"></i> Dale Steyn</a></li>
+      <li><a href="#"><i class="fa fa-circle-o"></i> Morne Morkel</a></li>
+    </ul>
+    
+  </div>
+  <div id="chat-box">
+    <div class="header">
+      <span>Richard Avedon</span>
+      <a class="close"><i class="fa fa-times"></i></a>
+    </div>
+    <div class="messages nano nscroller has-scrollbar">
+      <div class="content" tabindex="0" style="right: -17px;">
+        <ul class="conversation">
+          <li class="odd">
+            <p>Hi John, how are you?</p>
+          </li>
+          <li class="text-right">
+            <p>Hello I am also fine</p>
+          </li>
+          <li class="odd">
+            <p>Tell me what about you?</p>
+          </li>
+          <li class="text-right">
+            <p>Sorry, I'm late... see you</p>
+          </li>
+          <li class="odd unread">
+            <p>OK, call me later...</p>
+          </li>
+        </ul>
+      </div>
+    <div class="pane" style="display: none;"><div class="slider" style="height: 20px; top: 0px;"></div></div></div>
+    <div class="chat-input">
+      <div class="input-group">
+        <input type="text" placeholder="Enter a message..." class="form-control">
+        <span class="input-group-btn">
+        <button class="btn btn-danger" type="button">Send</button>
+        </span>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- /sidebar chats -->  
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-1.10.2.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="bs3/js/bootstrap.min.js"></script>
+<script src="js/smooth-sliding-menu.js"></script>
+<script src="js/jPushMenu.js"></script> 
+<script src="js/side-chats.js"></script> 
+<script src="plugins/scroll/jquery.nanoscroller.js"></script>
+</body>
+</html>

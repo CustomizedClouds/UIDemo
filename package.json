@@ -1,0 +1,13 @@
+{
+  "name": "aDOM",
+  "main": "root/aDOM/runtime.html",
+  "node-main": "server.js",
+
+  "window": {
+    "icon": "icon.png",
+	"width": 650,
+	"height":800,
+	"toolbar": false,
+	"always-on-top": false
+  }
+}
